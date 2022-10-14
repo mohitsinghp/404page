@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+@import url("https://fonts.googleapis.com/css?family=Space Mono");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  margin: 0 5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  margin: 40px 0;
+}
+
+header h2 {
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.08em;
+  color: #333333;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.content-img img {
+  margin: 3rem 0;
+  width: 100%;
+  max-width: 539px;
+  height: auto;
+  max-height: 447px;
+}
+
+.content-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 0;
+  max-width: 586px;
+}
+
+.content-info h1 {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  color: #333333;
+  max-width: 586px;
+}
+
+.content-info p {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  color: #4f4f4f;
+  max-width: 381px;
+  margin: 1rem 0;
+}
+
+button {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  background: #333333;
+  color: #ffffff;
+  width: 216px;
+  height: 68px;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  font-family: "Montserrat", monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #bdbdbd;
+}
+
+@media screen and (max-width: 900px) {
+  .content-container {
+    flex-wrap: wrap;
+  }
+
+  .content-info p {
+    margin: 2rem 0;
+  }
+
+  button {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content-info h1 {
+    font-size: 48px;
+  }
+
+  .content-info p {
+    font-size: 18px;
+  }
+}
